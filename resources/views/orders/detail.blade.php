@@ -30,7 +30,7 @@
                         <div class="form-group row">
                             {{ Form::label('Thickness', 'Thickness', ['class' => 'col-sm-2 col-form-label']) }}
                             <div class="col-sm-4">
-                                {{ Form::number('Thickness', $orderDetail->Thickness,['class' => 'form-control', 'min' => '0.0001', 'step' => '0.0001']) }}
+                                {{ Form::number('Thickness', $orderDetail->Thickness,['class' => 'form-control', 'min' => '0.01', 'step' => '0.01']) }}
                             </div>
                         </div>
                         <div class="form-group row">
