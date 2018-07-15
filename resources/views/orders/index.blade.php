@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Orders</div>
+                    <div class="panel-heading"><h3>Orders Import</h3></div>
 
                     <div class="panel-body">
 
@@ -34,17 +34,22 @@
                                     </div>
                                 </div>
                             </form>
-
-                        <ul>
-                            @foreach ($orders as $order)
-                                <li>
-                                    <a href="/orders/{{$order->id}}">
-                                        Order {{ $order->id }}
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
                     </div>
+                </div>
+
+                <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Orders List</h3></div>
+                        <div class="panel-body">
+                            <ul>
+                                @foreach ($orders as $order)
+                                    <li>
+                                        <a href="/orders/{{$order->id}}">
+                                            Order {{ $order->id }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
